@@ -1,0 +1,11 @@
+.btn__regular {
+  background-color: #20bdd1;
+  color: white;
+  font-weight: 500;
+  padding: 8px 25px;
+  margin: 0 10px;
+}
+.btn__regular:hover {
+  color: #fff;
+  background-color: #02123a;
+}
