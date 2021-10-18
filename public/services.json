@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1001,
+    "name": "Family Health Solutions",
+    "description": "Family Health Services is a combination of several Programs involving Maternal Child Health Services. Including WIC, Family Case Management, the High Risk Infant Follow up Program, Genetics, Intensive Prenatal Case Management, and Health Works.",
+    "img": "https://i.ibb.co/KLQkS5R/44950877-l.jpg"
+  },
+  {
+    "id": 1002,
+    "name": "Eye Care Solutions",
+    "description": "Your Vision Source doctor will help you obtain the appropriate eye drops and contact solution for your eyes. Below are some of the brands our member practices offer. Because each Vision Source office is independently owned and operated, eye drops and solutions will vary by location.",
+    "img": "https://i.ibb.co/ydHfbTX/image-N8-W6-HPF.jpg"
+  },
+  {
+    "id": 1003,
+    "name": "Children’s Health",
+    "description": "Health Means More Than Eating Peas and Carrots. Build a Healthy Lifestyle for Your Kids. Check Out Parenting Articles & Tips on Promoting Your Children's Health. Parent Stories. Practical Tips. Local Support. Expert Authors.",
+    "img": "https://i.ibb.co/pbsBRTh/Childrens-Healthcare-1.jpg"
+  },
+  {
+    "id": 1004,
+    "name": "Dental Surgery",
+    "description": "Dental surgery is a broad term that refers to a broad range of medical procedures that involves the gums and teeth. These include root canal, implants, and wisdom tooth extraction. Out of the different dental surgery procedures, perhaps the most common is wisdom teeth removal.",
+    "img": "https://i.ibb.co/SRvkKD3/What-should-you-look-for-when-choosing-your-dentist-1280x720.jpg"
+  },
+  {
+    "id": 1005,
+    "name": "Outpatient Surgery",
+    "description": "Outpatient surgery, also known as ambulatory surgery, day surgery, day case surgery, or same-day surgery, is surgery that does not require an overnight hospital stay. The term “outpatient” arises from the fact that surgery patients may enter and leave the facility on the same day.",
+    "img": "https://i.ibb.co/4Wbwrpg/Nursing-Care-For-Gastric-Cancer-caregiver-new-jersey.jpg"
+  },
+  {
+    "id": 1006,
+    "name": "Gynaecological",
+    "description": "A gynaecological examination is done to assess the overall health of the female reproductive system. During the exam, the gynaecologist will look at the external and internal reproductive organs, as well as at the breasts, to determine whether there are any problems or conditions present.",
+    "img": "https://i.ibb.co/RvJbXyZ/Gynecology-630x408.jpg"
+  },
+  {
+    "id": 1007,
+    "name": "Outpatient Rehabilitation",
+    "description": "Outpatient therapy at Brooks Rehabilitation offers a personalized experience to help empower you throughout your recovery. Brooks is staffed by clinicians and specialists who are at the top of their respective fields. Our team members.",
+    "img": "https://i.ibb.co/y5hyjhf/inpatient-vs-outpatient-rehabilitation-min-min.jpg"
+  },
+  {
+    "id": 1008,
+    "name": "Nuclear Magnetic",
+    "description": "Nuclear magnetic resonance spectroscopy, most commonly known as NMR spectroscopy or magnetic resonance spectroscopy (MRS), is a spectroscopic technique to observe local magnetic fields around atomic nuclei. The sample is placed in a magnetic field.",
+    "img": "https://i.ibb.co/zh86b3r/gxp3tcjs-1377055247.jpg"
+  }
+]

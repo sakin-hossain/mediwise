@@ -1,10 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import useAuth from '../../../hooks/useAuth';
 import "./Header.css";
 
 const Header = () => {
+    const {user, logOut} = useAuth();
+    console.log(user);
     return (
-        <div className="flex p-3 justify-around items-center header">
+        <div className="flex p-3 justify-around items-center header sticky top-0 bg-white">
             <div className="text-2xl">
                 <h1>Medi<span className="text-blue-400">Wise</span></h1>
             </div>
@@ -25,8 +28,13 @@ const Header = () => {
                 </ul>
             </div>
             <div className="buttons">
-                <button type="button" className="btn__regular">Login</button>
-                <button type="button" className="btn__regular">Sign Up</button>
+                {
+                    !user.email ? <Link to="/login"><button type="button" className="btn__regular">Login</button></Link> :
+                    <div>
+                        <h2>Welcome {user.displayName}</h2>
+                    <button type="button" onClick={logOut} className="btn__regular">LogOut</button>
+                    </div>
+                    }
             </div>
         </div>
     );

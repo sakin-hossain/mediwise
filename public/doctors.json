@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1001,
+    "name": "Dr. Jolian Acenj",
+    "specialist": "Surgery Specialist",
+    "img": "https://i.ibb.co/3d7n6Vv/d1.png"
+  },
+  {
+    "id": 1002,
+    "name": "Dr. Arnica Sarah",
+    "specialist": "Lasik Specialist",
+    "img": "https://i.ibb.co/S51py8n/d2.png"
+  },
+  {
+    "id": 1003,
+    "name": "Dr. Rolien Adam",
+    "specialist": "Medicine Specialist",
+    "img": "https://i.ibb.co/685PKp4/d3.png"
+  },
+  {
+    "id": 1004,
+    "name": "Dr. Triben Dina",
+    "specialist": "Neurosurgery Specialist",
+    "img": "https://i.ibb.co/qnTZ6sL/d4.png"
+  },
+  {
+    "id": 1005,
+    "name": "Dr. Alena Malic",
+    "specialist": "Gynaecological Specialist",
+    "img": "https://i.ibb.co/KLvYsrB/d5.png"
+  },
+  {
+    "id": 1006,
+    "name": "Dr. Malina Angel",
+    "specialist": "Medicine Specialist",
+    "img": "https://i.ibb.co/4VfqZwz/d6.png"
+  }
+]

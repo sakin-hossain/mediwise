@@ -1,0 +1,25 @@
+.footer {
+  background-color: #020016;
+  min-height: 50vh;
+  padding-left: 100px;
+}
+.footer h2 {
+  font-weight: 700;
+  font-size: 22px;
+  color: #289cac;
+}
+
+.footer ul {
+  list-style: none;
+}
+.footer ul li {
+  margin: 10px 0;
+  font-weight: 600;
+}
+.footer p {
+  margin: 10px 0;
+  font-weight: 600;
+}
+.copyright {
+  background-color: #0e0c21;
+}
