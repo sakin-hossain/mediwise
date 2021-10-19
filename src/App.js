@@ -1,6 +1,9 @@
+import "leaflet/dist/leaflet.css";
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
 import AuthProvider from './Context/AuthProvider';
+import Appointment from './Pages/Appointment/Appointment';
+import ContractUs from './Pages/ContractUs/ContractUs';
 import Footer from './Pages/Home/Footer/Footer';
 import Header from './Pages/Home/Header/Header';
 import Home from './Pages/Home/Home/Home';
@@ -26,6 +29,12 @@ function App() {
             </PrivateRoute>
             <Route exact path="/login">
               <Login/> 
+            </Route>
+            <Route exact path="/contract">
+              <ContractUs/> 
+            </Route>
+            <Route exact path="/appointment">
+              <Appointment/> 
             </Route>
           </Switch>
           <Footer/>

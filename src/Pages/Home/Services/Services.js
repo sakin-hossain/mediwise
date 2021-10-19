@@ -11,7 +11,7 @@ const Services = () => {
         .then(data=>setServices(data));
     },[])
     return (
-        <div className="services">
+        <div className="services" id="services">
             <span>Services</span>
             <h1>MediWise Services</h1>
             <div className="grid md:grid-cols-2 sm:grid-cols-1 service__item">

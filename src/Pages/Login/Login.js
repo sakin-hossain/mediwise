@@ -31,7 +31,7 @@ const Login = () => {
                 <input onChange={handleEmailChange} type="email" placeholder="Your Email" /> <br />
                 <input onChange={handlePasswordChange} type="password" placeholder="Your Password" /> <br />
                 <input onChange={checkedIsLogin} type="checkbox" id="registered" value="registered"/>
-                <label for="registered"> Already Registered ?</label><br/>
+                <label htmlFor="registered"> Already Registered ?</label><br/>
                 <p>{error}</p>
                 <button type="submit"  className="btn__regular px-18">{isLogin ? 'Login' : 'Register'}</button> <br />
                 {

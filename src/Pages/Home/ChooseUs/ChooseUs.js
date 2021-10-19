@@ -3,7 +3,7 @@ import "./ChooseUs.css";
 
 const ChooseUs = () => {
     return (
-        <div className="choose__us grid md:grid-cols-2 sm:grid-cols-1">
+        <div className="choose__us grid md:grid-cols-2 sm:grid-cols-1" id="about-us">
             <div>
                 <img src="https://i.ibb.co/QFLRM0Y/bmc3zndq-1411073854.jpg" alt="" />
             </div>
