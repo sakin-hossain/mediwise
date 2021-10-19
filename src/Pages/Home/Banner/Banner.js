@@ -7,7 +7,9 @@ const Banner = () => {
             <div className="banner__title">
                 <p>Critical Care Center</p>
                 <h1>MediWise Specialist <br /> Services That You <br /> Can Trust</h1>
-                <button className="btn__regular mx-auto">More About Us</button>
+                <button className="btn__regular mx-auto">
+                    More About Us
+                </button>
             </div>
         </div>
     );

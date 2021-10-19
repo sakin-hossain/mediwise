@@ -4,7 +4,8 @@
   color: white;
   font-weight: 500;
   padding: 8px 25px;
-  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.4s;
 }
 .btn__regular:hover {
   color: #fff;
