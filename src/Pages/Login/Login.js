@@ -4,7 +4,7 @@ import useAuth from '../../hooks/useAuth';
 import "./Login.css";
 
 const Login = () => {
-    const {handleSubmit, isLogin, handleEmailChange, handlePasswordChange, handleNameChange, checkedIsLogin, signInUsingGoogle, handleResetPass, error, setUser} = useAuth();
+    const {handleSubmit, isLogin, handleEmailChange, handlePasswordChange, handleNameChange, checkedIsLogin, signInUsingGoogle, handleResetPass, error, setUser, setError} = useAuth();
     const location = useLocation();
     const history = useHistory();
     // handle redirecting using google login
@@ -14,9 +14,10 @@ const Login = () => {
             const user = result.user;
             setUser(user);
             history.push(location.state?.from || '/home');
+            setError("");
           }).catch((error) => {
             const errorMessage = error.message;
-            console.log(errorMessage);
+            setError(errorMessage);
           });
     }
 

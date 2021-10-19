@@ -5,15 +5,15 @@ import initializeAuthentication from "../Pages/Shared/Firebase/firebase.init";
 initializeAuthentication();
 
 const useFirebase = () => {
-    const googleProvider = new GoogleAuthProvider();
     const auth = getAuth();
     const [user, setUser] = useState({});
     const [isLogin, setIsLogin] = useState(false);
     const [email, setEmail] = useState('');
     const [name, setName] = useState('');
     const [password, setPassword] = useState('');
-    const [error, setError] = useState('');
+    const [error, setError] = useState("");
     const signInUsingGoogle = () => {
+        const googleProvider = new GoogleAuthProvider();
         return signInWithPopup(auth, googleProvider);
     }
 // check if login or not
@@ -64,8 +64,8 @@ const useFirebase = () => {
             setError("");
           })
           .catch((error) => {
-            setError(error.message);
-            setError(error.code)
+            const errorMessage = error.message;
+            setError(errorMessage);
           });
     }
 
