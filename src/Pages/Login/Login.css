@@ -1,3 +1,4 @@
+/* login container style */
 .login {
   background-color: #e5f9fc;
   min-height: 80vh;
@@ -12,6 +13,7 @@
   border: 1px solid gray;
 }
 
+/* button style */
 .btn__login {
   background-color: #20bdd1;
   color: white;

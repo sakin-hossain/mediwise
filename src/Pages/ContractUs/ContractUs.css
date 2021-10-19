@@ -1,3 +1,4 @@
+/* contract us style */
 .contract__us__tile {
   background-image: url("https://i.ibb.co/NLkNND0/doctor-stethoscope-c-1.png");
   background-repeat: no-repeat;
@@ -48,6 +49,8 @@ input[type="submit"]:hover {
   margin: 0 auto;
   margin-bottom: 30px;
 }
+
+/* leaflet map */
 .map__class {
   min-height: 20vh;
   width: 100%;

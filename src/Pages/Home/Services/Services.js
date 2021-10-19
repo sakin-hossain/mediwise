@@ -4,7 +4,7 @@ import "./Services.css";
 
 const Services = () => {
     const [services, setServices] = useState([]);
-
+// load services data
     useEffect(()=>{
         fetch('./services.json')
         .then(res=> res.json())
@@ -14,6 +14,7 @@ const Services = () => {
         <div className="services" id="services">
             <span>Services</span>
             <h1>MediWise Services</h1>
+            {/* show services */}
             <div className="grid md:grid-cols-2 sm:grid-cols-1 service__item">
                 {
                     services.map(service=>

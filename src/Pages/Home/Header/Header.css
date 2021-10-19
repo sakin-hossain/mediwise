@@ -1,3 +1,4 @@
+/* button style */
 .btn__regular {
   background-color: #20bdd1;
   color: white;
@@ -9,12 +10,13 @@
   color: #fff;
   background-color: #02123a;
 }
+
 .login__section {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
+/* media query */
 @media (max-width: 480px) {
   .header {
     display: flex;

@@ -42,6 +42,7 @@ const Footer = () => {
                     </ul>
                 </div>
             </div>
+            {/* copyright section */}
             <div className="copyright text-white flex justify-around p-5">
                 <p>Copyright &copy; 2021 MediWise. Designed By Md. Sakin Hossain</p>
                 <p> <Link to="/home">Terms &amp; Conditions </Link> | <Link to="/home"> Privacy Policy</Link></p>

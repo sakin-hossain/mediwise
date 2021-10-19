@@ -4,6 +4,7 @@ import "./Appointment.css";
 const Appointment = () => {
     return (
         <div className="appointment__container py-10">
+            {/* appointment form */}
             <div className="container">
             <form>
                 <label htmlFor="fname">First Name</label>

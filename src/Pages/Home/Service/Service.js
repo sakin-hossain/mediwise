@@ -6,13 +6,13 @@ const Service = () => {
     const {serviceId} = useParams();
     const [service, setService] = useState([]);
     const [filtered, setFiltered] = useState({});
-
+    // load service data
     useEffect(()=>{
         fetch('/services.json')
         .then(res=> res.json())
         .then(data=>setService(data));
     },[])
-
+    // find specific service via id
     useEffect(()=>{
         setFiltered(service.find(item => item.id === parseInt(serviceId)))
     // eslint-disable-next-line react-hooks/exhaustive-deps

@@ -16,7 +16,7 @@ const useFirebase = () => {
     const signInUsingGoogle = () => {
         return signInWithPopup(auth, googleProvider);
     }
-
+// check if login or not
     const checkedIsLogin = e =>{
         setIsLogin(e.target.checked);
     }
@@ -30,7 +30,7 @@ const useFirebase = () => {
     const handleNameChange = e => {
         setName(e.target.value);
     }
-
+// form handler
     const handleSubmit = e =>{
         e.preventDefault();
         if(password.length < 8){
@@ -40,7 +40,7 @@ const useFirebase = () => {
 
         isLogin? processToLogin(email, password): processToRegister(email,password);
     }
-
+// register function
     const processToRegister = (email, password) => {
         createUserWithEmailAndPassword(auth, email, password)
         .then((result) => {
@@ -54,7 +54,7 @@ const useFirebase = () => {
         setError(error.message);
       });
     }
-
+// login via email and password
     const processToLogin = (email, password) => {
         signInWithEmailAndPassword(auth, email, password)
         signInWithEmailAndPassword()
@@ -72,7 +72,7 @@ const useFirebase = () => {
     const setUserName = () => {
         updateProfile(auth.currentUser, { displayName: name }).then((result) => {});
       };
-
+// check current user sill logged in or not
     useEffect(()=>{
         const unsubscribed = onAuthStateChanged(auth, user=>{
             if(user){
@@ -85,21 +85,21 @@ const useFirebase = () => {
         return () => unsubscribed;
     // eslint-disable-next-line react-hooks/exhaustive-deps
     },[]);
-
+// verify new user by mail
     const verifyEmail = () =>{
       sendEmailVerification(auth.currentUser)
       .then(result=>{
         console.log(result);
       })
     };
-
+// forget password or reset password
     const handleResetPass = () => {
       sendPasswordResetEmail(auth, email)
       .then(result=>{
         console.log(result);
       })
     }
-
+// logout function
     const logOut = () =>{
         signOut(auth).then(() => {
             // Sign-out successful.

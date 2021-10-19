@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import "./Doctors.css";
 
 const Doctors = () => {
+    // load doctors data
     const [doctors, setDoctors] = useState([]);
 
     useEffect(()=>{
@@ -14,6 +15,7 @@ const Doctors = () => {
         <div className="doctors">
             <span>Doctors</span>
             <h1>MediWise Specialist</h1>
+            {/* show doctors data */}
             <div className="grid md:grid-cols-2 sm:grid-cols-1 doctors__container">
                 {
                     doctors.map(doctor=>

@@ -13,6 +13,7 @@ const ContractUs = () => {
             <div className="contract__us__tile">
                 <h1>Contract Us</h1>
             </div>
+            {/* contract us form */}
             <div className="container">
             <form>
                 <label htmlFor="fname">First Name</label>
@@ -36,6 +37,7 @@ const ContractUs = () => {
                 <input type="submit" value="Submit"/>
             </form>
             </div>
+            {/* leaflet map */}
             <div id="mapId">
             <MapContainer center={center} zoom={13} style={{width:'100%', height:'30vh'}} scrollWheelZoom={false}>
                 <LayersControl position="topright">

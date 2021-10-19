@@ -7,7 +7,7 @@ const Login = () => {
     const {handleSubmit, isLogin, handleEmailChange, handlePasswordChange, handleNameChange, checkedIsLogin, signInUsingGoogle, handleResetPass, error, setUser} = useAuth();
     const location = useLocation();
     const history = useHistory();
-
+    // handle redirecting using google login
     const handleGoogleSignIn = () => {
         signInUsingGoogle()
         .then((result) => {
