@@ -35,8 +35,8 @@ const Header = () => {
             <div className="buttons">
                 {
                     !user.email ? <Link to="/login"><button type="button" className="btn__regular">Login</button></Link> :
-                    <div>
-                        <h2>Welcome {user.displayName}</h2>
+                    <div className="login__section">
+                        <h2 className="mr-4">Welcome <span className=" text-blue-400 font-bold">{user.displayName}</span></h2>
                     <button type="button" onClick={logOut} className="btn__regular">LogOut</button>
                     </div>
                     }

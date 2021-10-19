@@ -24,7 +24,9 @@ const Services = () => {
                             <div>
                                 <h4>{service.name}</h4>
                                 <p>{service.description}</p>
-                                <Link to ={`services/${service.id}`}>More ...</Link>
+                                <Link to ={`services/${service.id}`}>
+                                    <button className="btn__regular">Get This...</button>
+                                </Link>
                             </div>
                         </div>
                         )

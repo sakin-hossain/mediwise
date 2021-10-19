@@ -31,12 +31,9 @@
   }
   .banner__title {
     position: static;
+    margin-left: 10px;
   }
   .banner__title h1 {
     font-size: 40px;
-    margin-left: 10px;
-  }
-  .banner__title p {
-    margin-left: 10px;
   }
 }

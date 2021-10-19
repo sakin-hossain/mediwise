@@ -3,11 +3,16 @@
   color: white;
   font-weight: 500;
   padding: 8px 25px;
-  margin: 0 10px;
+  transition: 0.5s;
 }
 .btn__regular:hover {
   color: #fff;
   background-color: #02123a;
+}
+.login__section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: 480px) {
