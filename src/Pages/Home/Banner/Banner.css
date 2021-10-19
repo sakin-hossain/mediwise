@@ -8,7 +8,7 @@
 }
 .banner__title {
   position: absolute;
-  bottom: 40%;
+  top: 30%;
   left: 15%;
 }
 .banner__title p {
@@ -21,4 +21,22 @@
   font-weight: 700;
   color: #02123a;
   margin-bottom: 10px;
+}
+
+@media (max-width: 480px) {
+  .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner__title {
+    position: static;
+  }
+  .banner__title h1 {
+    font-size: 40px;
+    margin-left: 10px;
+  }
+  .banner__title p {
+    margin-left: 10px;
+  }
 }

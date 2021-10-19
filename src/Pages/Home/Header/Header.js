@@ -7,9 +7,11 @@ import "./Header.css";
 const Header = () => {
     const {user, logOut} = useAuth();
     return (
-        <div className="flex p-3 justify-around items-center header sticky top-0 bg-white">
+        <div className="flex p-3 justify-around items-center flex-wrap header md:sticky top-0 bg-white">
             <div className="text-2xl">
-                <h1>Medi<span className="text-blue-400">Wise</span></h1>
+                <Link to="/home">
+                    <h1>Medi<span className="text-blue-400">Wise</span></h1>
+                </Link>
             </div>
             <div className="font-semibold">
             <ul className="flex">
