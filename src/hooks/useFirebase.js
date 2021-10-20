@@ -12,6 +12,7 @@ const useFirebase = () => {
     const [name, setName] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState("");
+    const [isLoading, setIsLoading] = useState(true);
     const signInUsingGoogle = () => {
         const googleProvider = new GoogleAuthProvider();
         return signInWithPopup(auth, googleProvider);
@@ -56,17 +57,7 @@ const useFirebase = () => {
     }
 // login via email and password
     const processToLogin = (email, password) => {
-        signInWithEmailAndPassword(auth, email, password)
-        signInWithEmailAndPassword()
-        .then((result) => {
-            const user = result.user;
-            setUser(user);
-            setError("");
-          })
-          .catch((error) => {
-            const errorMessage = error.message;
-            setError(errorMessage);
-          });
+        return signInWithEmailAndPassword(auth, email, password)
     }
 
     const setUserName = () => {
@@ -81,6 +72,7 @@ const useFirebase = () => {
             else{
                 setUser({});
             }
+            setIsLoading(false);
         });
         return () => unsubscribed;
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -101,11 +93,12 @@ const useFirebase = () => {
     }
 // logout function
     const logOut = () =>{
+        setIsLoading(true);
         signOut(auth).then(() => {
             // Sign-out successful.
           }).catch((error) => {
             // An error happened.
-          });
+          }).finally(() => setIsLoading(false));
     }
     return {
         signInUsingGoogle,
@@ -121,7 +114,12 @@ const useFirebase = () => {
         setUser,
         setError,
         email,
+        password,
         name,
+        setIsLoading,
+        isLoading,
+        processToLogin,
+        processToRegister,
         error
     }
 }

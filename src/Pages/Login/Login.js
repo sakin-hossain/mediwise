@@ -4,11 +4,12 @@ import useAuth from '../../hooks/useAuth';
 import "./Login.css";
 
 const Login = () => {
-    const {handleSubmit, isLogin, handleEmailChange, handlePasswordChange, handleNameChange, checkedIsLogin, signInUsingGoogle, handleResetPass, error, setUser, setError} = useAuth();
+    const {handleSubmit, isLogin, handleEmailChange, handlePasswordChange, handleNameChange, checkedIsLogin, signInUsingGoogle, handleResetPass, error, setUser, setError, setIsLoading,processToLogin, email, password, processToRegister} = useAuth();
     const location = useLocation();
     const history = useHistory();
     // handle redirecting using google login
     const handleGoogleSignIn = () => {
+        setIsLoading(true);
         signInUsingGoogle()
         .then((result) => {
             const user = result.user;
@@ -16,6 +17,21 @@ const Login = () => {
             history.push(location.state?.from || '/home');
             setError("");
           }).catch((error) => {
+            const errorMessage = error.message;
+            setError(errorMessage);
+          }).finally(() => setIsLoading(false));
+    }
+
+    const handleEmailLogin = () => {
+            processToLogin(email, password)
+            .then((result) => {
+            const user = result.user;
+            // user?.displayName ? window.location.pathname = (location.state?.from || '/home') : window.location.pathname = "/login";
+            history.push(location.state?.from || '/home');
+            setUser(user);
+            setError("");
+          })
+          .catch((error) => {
             const errorMessage = error.message;
             setError(errorMessage);
           });
@@ -33,9 +49,12 @@ const Login = () => {
                 <input onChange={handlePasswordChange} type="password" placeholder="Your Password" /> <br />
                 <input onChange={checkedIsLogin} type="checkbox" id="registered" value="registered"/>
                 <label htmlFor="registered"> Already Registered ?</label><br/>
-                <p>{error}</p>
                 <div className="text-center">
-                <button type="submit"  className="btn__login">{isLogin ? 'Login' : 'Register'}</button> <br />
+                <p className="max-w-2xl">{error}</p>
+                {
+                    isLogin? <button onClick={handleEmailLogin} type="submit"  className="btn__login">Login</button>:
+                    <button onClick={processToRegister} type="submit"  className="btn__login">Register</button>                    
+                } <br />
                 {
                     isLogin && <button type="submit" onClick={handleResetPass} className="btn__login">Forget Password</button>
                 }
