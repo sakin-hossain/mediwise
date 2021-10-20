@@ -1,3 +1,6 @@
+.header {
+  z-index: 9999;
+}
 /* button style */
 .btn__regular {
   background-color: #20bdd1;

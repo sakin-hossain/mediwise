@@ -11,6 +11,7 @@
   position: absolute;
   top: 30%;
   left: 15%;
+  z-index: 1;
 }
 .banner__title p {
   font-weight: 600;
