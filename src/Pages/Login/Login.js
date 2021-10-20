@@ -26,7 +26,6 @@ const Login = () => {
             processToLogin(email, password)
             .then((result) => {
             const user = result.user;
-            // user?.displayName ? window.location.pathname = (location.state?.from || '/home') : window.location.pathname = "/login";
             history.push(location.state?.from || '/home');
             setUser(user);
             setError("");
