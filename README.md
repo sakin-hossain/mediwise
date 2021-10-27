@@ -1,6 +1,6 @@
 # MediWise
 
-To view this project click on it [Mediwise](https://medi-wise.netlify.app/).
+To view this project click on it [Mediwise](https://mediwise-f0d0e.web.app/).
 
 •	This project is built by react, tailwind CSS, firebase, react-leaflet, react router.
 
